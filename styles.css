@@ -34,3 +34,17 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* ### UTILITIES ### */
+
+.text-black {
+  color: var(--neutral-dark-blue);
+}
+
+.text-purple {
+  color: var(--primary-bright-blue);
+}
+
+.stack > * + * {
+  margin-top: var(--stack-gap, 1rem);
+}
