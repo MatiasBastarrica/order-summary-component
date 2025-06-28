@@ -56,6 +56,9 @@ body {
   background-color: var(--primary-pale-blue);
   color: var(--neutral-desaturated-blue);
   font-weight: var(--fw-500);
+  background: var(--primary-pale-blue)
+    url(./images/pattern-background-mobile.svg) no-repeat;
+  background-size: contain;
 }
 
 main {
@@ -154,4 +157,28 @@ a.cancel {
 
 a.cancel:hover {
   color: var(--neutral-dark-blue);
+}
+
+/* ### MEDIA QUERIES ### */
+
+@media (min-width: 40em) {
+  body {
+    background: var(--primary-pale-blue)
+      url(./images/pattern-background-desktop.svg) no-repeat;
+    background-size: contain;
+  }
+
+  .card {
+    max-width: 410px;
+  }
+
+  .card__body {
+    --stack-gap: 1.6rem;
+    padding: 2rem 2.5rem;
+  }
+
+  .pricing-section {
+    gap: 1.5rem;
+    padding: 1.4rem;
+  }
 }
