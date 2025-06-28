@@ -69,7 +69,7 @@ main {
 /* ### CARD ### */
 
 .card {
-  max-width: 450px;
+  max-width: 375px;
   background-color: var(--neutral-very-pale-blue);
   border-radius: 1.2rem;
   overflow: hidden;
