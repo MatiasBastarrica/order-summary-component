@@ -48,3 +48,110 @@ a {
 .stack > * + * {
   margin-top: var(--stack-gap, 1rem);
 }
+
+/* ### GENERAL STYLING ### */
+
+body {
+  font-family: var(--ff-red-hat-display);
+  background-color: var(--primary-pale-blue);
+  color: var(--neutral-desaturated-blue);
+  font-weight: var(--fw-500);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+/* ### CARD ### */
+
+.card {
+  max-width: 450px;
+  background-color: var(--neutral-very-pale-blue);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card__body {
+  --stack-gap: 1.5rem;
+  padding: 2rem 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: var(--fw-900);
+}
+
+.card .description {
+  width: 95%;
+  margin-inline: auto;
+  line-height: 1.6;
+}
+
+/* ## PRICING SECTION ## */
+
+.pricing-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: hsla(224, 23%, 55%, 0.072);
+  padding: 1.1rem;
+  border-radius: 0.8rem;
+}
+
+.pricing-section > img {
+  width: 48px;
+  height: 48px;
+}
+
+.pricing-info__plan {
+  font-size: 0.915rem;
+  font-weight: var(--fw-900);
+}
+
+.pricing-info__price {
+  margin-top: 0.3rem;
+  font-weight: var(--fw-700);
+  font-size: 0.9rem;
+}
+
+a.price-change {
+  text-decoration: underline;
+  font-weight: var(--fw-900);
+  margin-inline-start: auto;
+  font-size: 0.915rem;
+}
+
+a.price-change:hover {
+  color: hsla(245, 75%, 52%, 0.546);
+}
+
+a.btn {
+  display: inline-block;
+  width: 100%;
+  background-color: var(--primary-bright-blue);
+  padding: 0.825rem;
+  border-radius: 0.7rem;
+  color: white;
+  font-weight: var(--fw-900);
+  font-size: 0.95rem;
+  box-shadow: 0px 10px 20px hsla(245, 75%, 52%, 0.32);
+}
+
+a.btn:hover {
+  background-color: hsla(245, 75%, 52%, 0.546);
+  box-shadow: 0px 10px 20px hsla(245, 75%, 52%, 0.546);
+}
+
+a.cancel {
+  display: inline-block;
+  font-weight: var(--fw-900);
+}
+
+a.cancel:hover {
+  color: var(--neutral-dark-blue);
+}
